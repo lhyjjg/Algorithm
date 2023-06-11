@@ -8,9 +8,4 @@ function solution(s){
     let countY = s.match(regexrY) ? s.match(regexrY).length : 0;
     
     return countP === countY || countP + countY < 1 ? true : false;
-    
-//     let countP = [...s].filter((spell) => spell === 'p').length;
-//     let countY = [...s].filter((spell) => spell === 'y').length;
-    
-//     return countP === countY || countP + countY === 0 ? true : false;
 }
